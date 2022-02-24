@@ -1,3 +1,10 @@
 <?php
 include "../database.php";
-echo json_encode(all(sql("select * from table1")));
+include "../error.php";
+include "../error.php";
+
+try {
+    echo json_encode(all(sql("select * from table1")));
+} catch (Throwable $t) {
+    error();
+}
