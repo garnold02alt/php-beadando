@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "88592e44-df12-4fd8-9596-b02e84b28eb6",
+		"_postman_id": "7f7888b7-ba10-44d1-8b19-9e4516ec70e2",
 		"name": "beadando",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -10,9 +10,21 @@
 			"item": [
 				{
 					"name": "select",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "GET",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
 							"raw": "localhost/api/table1/select.php",
 							"host": [
@@ -34,7 +46,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"data1\": \"inserted data 5\",\r\n    \"data2\": 69420,\r\n    \"data3\": 2\r\n}",
+							"raw": "{\r\n    \"data1\": \"data1\",\r\n    \"data2\": 100,\r\n    \"data3\": 0\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -62,7 +74,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"id\": 1,\r\n    \"data1\": \"Modified data\"\r\n}",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"data1\": \"data1 was modified\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -214,6 +226,72 @@
 								"api",
 								"table2",
 								"delete.php"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "register",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"user\",\r\n    \"email\": \"user@example.com\",\r\n    \"passwd\": \"$2a$12$m5rBVAW4t0AcWVN7QIkY5eV/iWEEg/Bg7oG3I/kDXNDmC5j47tSfq\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/api/user/register.php",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"user",
+								"register.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"admin@example.com\",\r\n    \"passwd\": \"$2a$12$m2JP/b//HJPpnvjKJmoJMOJ3exU6aQAKjsaDlR99dJFS.4wJnX0YC\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/api/login.php",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"login.php"
 							]
 						}
 					},
