@@ -1,0 +1,225 @@
+{
+	"info": {
+		"_postman_id": "88592e44-df12-4fd8-9596-b02e84b28eb6",
+		"name": "beadando",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "table1",
+			"item": [
+				{
+					"name": "select",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost/api/table1/select.php",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"table1",
+								"select.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"data1\": \"inserted data 5\",\r\n    \"data2\": 69420,\r\n    \"data3\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/api/table1/create.php",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"table1",
+								"create.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"data1\": \"Modified data\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/api/table1/update.php",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"table1",
+								"update.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/api/table1/delete.php",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"table1",
+								"delete.php"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "table2",
+			"item": [
+				{
+					"name": "select",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost/api/table2/select.php",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"table2",
+								"select.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"data1\": \"inserted data 5\",\r\n    \"data2\": 69420,\r\n    \"data3\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/api/table2/create.php",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"table2",
+								"create.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"data1\": \"Modified data\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/api/table2/update.php",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"table2",
+								"update.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/api/table2/delete.php",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"table2",
+								"delete.php"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
