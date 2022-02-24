@@ -13,7 +13,3 @@ function all($result)
     }
     return $arr;
 }
-
-function create($table, $values)
-{
-}

@@ -7,6 +7,7 @@ create database beadando
     collate utf8_hungarian_ci;
 
 use beadando;
+
 create table table2 (
     id      int         not null auto_increment   ,
     data1   bit(1)      not null                  ,
@@ -52,5 +53,5 @@ insert into users (username, email, passwd)
     values (
         'admin',
         'admin@example.com',
-        '$2a$12$hnq0FONXeLQyrkJp/lPy/.qdM5fdsNqdEFPSKPG9vnUPPrPHnSMH6'
+        '$2a$12$m2JP/b//HJPpnvjKJmoJMOJ3exU6aQAKjsaDlR99dJFS.4wJnX0YC'
     );
