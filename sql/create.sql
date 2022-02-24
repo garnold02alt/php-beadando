@@ -55,3 +55,4 @@ insert into users (username, email, passwd)
         'admin@example.com',
         '$2a$12$m2JP/b//HJPpnvjKJmoJMOJ3exU6aQAKjsaDlR99dJFS.4wJnX0YC'
     );
+    
